@@ -167,3 +167,19 @@ body {
         font-size: 2.1rem;
     }
 }
+
+
+
+.btn {
+    background: #bb377d;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #9c2f66;
+}

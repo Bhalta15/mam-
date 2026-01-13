@@ -78,24 +78,3 @@ renderLetters();
 
 
 
-const music = document.getElementById("bgMusic");
-
-/* Iniciar música solo una vez */
-function startMusic() {
-    if (!localStorage.getItem("musicStarted")) {
-        music.volume = 0.4;
-        music.play();
-        localStorage.setItem("musicStarted", "true");
-    }
-}
-
-/* Si ya estaba iniciada, seguir */
-window.addEventListener("load", () => {
-    if (localStorage.getItem("musicStarted")) {
-        music.volume = 0.4;
-        music.play();
-    }
-});
-
-/* Ligar a interacción */
-document.addEventListener("click", startMusic, { once: true });
