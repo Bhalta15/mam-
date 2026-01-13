@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum para Mamá</title>
+    <link rel="stylesheet" href="album.css">
+</head>
+<audio id="bgMusic" loop>
+    <source src="audio/mama.mp3" type="audio/mpeg">
+</audio>
+
+<body>
+
+<h2 class="album-title">De todos los que te queremos!!💖</h2>
+
+<div class="album">
+
+    <div class="photo left border-papa" onclick="openModal('papa')">
+        <img src="img/papa2.jpg">
+    </div>
+
+    <div class="photo right border-hermana" onclick="openModal('hermana')">
+        <img src="img/tania.jpeg">
+    </div>
+
+    <div class="photo left border-tu" onclick="openModal('tu')">
+        <img src="img/uriel.jpg">
+    </div>
+
+    <div class="photo right border-novia" onclick="openModal('novia')">
+        <img src="img/wendy.jpg">
+    </div>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <p id="modalText"></p>
+    </div>
+</div>
+
+<script src="album.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rompecabezas</title>
+<link rel="stylesheet" href="rompecabezas.css">
+</head>
+<audio id="bgMusic" loop>
+    <source src="audio/mama.mp3" type="audio/mpeg">
+</audio>
+
+<body>
+
+<h2 id="title">🧩 Rompecabezas de recuerdos 🧩</h2>
+<p class="hint">Toca 1 pieza y despues la otra para intercambiarlas</p>
+
+
+<div id="puzzle" class="puzzle"></div>
+
+<p id="success" class="success"></p>
+
+<button id="continueBtn" onclick="nextPuzzle()">Continuar 💖</button>
+
+<script src="rompecabezas.js"></script>
+</body>
+</html>
